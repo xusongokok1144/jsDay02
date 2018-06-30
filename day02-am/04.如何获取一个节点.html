@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <P id="test" class="one">
+        hello world
+    </P>
+    <button>change</button>
+    <script>
+        // 如何获取一个节点 id获取
+        var test=document.getElementById("test");
+        console.log(test);
+        // 2.修改元素的内容
+        test.innerHTML="change";
+    </script>
+</body>
+</html>

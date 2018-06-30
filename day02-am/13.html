@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            height: 60px;
+            width: 60px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 局限性 只能获取内联样式 -->
+    <div id="test" style="width:100px"></div>
+    <script>
+        // let=document.getElementById("test");
+        // let value=test.style.width;
+        // console.log(value);
+
+        // chrme下获得内部样式和外部样式的样式
+        let value=getComputedStyle(test,null).width;
+        console.log(value);
+    </script>
+</body>
+</html>

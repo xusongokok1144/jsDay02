@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        onfocus  获取焦点
+        onblur 失去焦点
+        this 表示 正在执行事件的对象-->
+    <input type="text" id="input">
+    <script>
+        var input=document.getElementById("input");
+        input.onfocus=function(){
+            this.style.background="red";
+
+        }
+        input.onblur=function(){
+            this.style.background="green";
+        }
+    </script>
+</body>
+</html>

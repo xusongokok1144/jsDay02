@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- insertBefore 
+        语法：parentNode.insertBefore(assNode,targetNode)
+        createElement()创造元素节点
+        createTextNode（） 创造文本节点
+    -->
+        <div id="parent">
+                <p id="one">hello world</p>
+            </div>
+            <button id="add">add</button>
+            <script>
+                var add=document.getElementById("add");
+                var parent =document.getElementById("parent");
+                var one=document.getElementById("one");
+                add.onclick = function() {
+                    let p=document.createElement("p");
+                    let txt=document.createTextNode("first");
+                    p.appendChild(txt);
+                    parent.insertBefore(p,one);
+                }
+            </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 在之后添加节点 -->
+    <div id="parent">
+        <p>hello world</p>
+    </div>
+    <button id="add">add</button>
+    <script>
+        var add=document.getElementById("add");
+        var parent =document.getElementById("parent");
+        add.onclick = function() {
+            let p=document.createElement("p");
+            let txt=document.createTextNode("first");
+            p.appendChild(txt);
+            parent.appendChild(p);
+        }
+    </script>
+</body>
+</html>

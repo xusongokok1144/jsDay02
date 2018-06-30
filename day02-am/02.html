@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //es6版本之前没有块级作用域
+        for(var i=0;i<5;i++){
+            console.log("hello world");
+        }
+        console.log(i);
+        //es 6版本 有块级作用域
+       for(let i;i<5;i++){
+           console.log('let');
+       }{
+           let a=10;
+       }
+       console.log(a); 
+    </script>
+</body>
+</html>

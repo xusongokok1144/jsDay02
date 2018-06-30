@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <span id="mi">小米8
+            <button id="btn">btn</button>
+        </span>
+    </div>
+    <script>
+        // confirm 有返回值 确定 》 true   取消》false
+        // window.confirm("是否取消");
+        let btn=document.getElementById("btn");
+        let mi=document.getElementById("mi");
+        btn.onclick=function(){
+            var result =window.confirm("你确定不要小米8了吗");
+            if(result){
+                mi.style.display="none"
+            }else{
+                mi.style.display="block";
+              
+            }
+        }
+    </script>
+</body>
+</html>

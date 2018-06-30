@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 隔行变色的两种办法 */
+        /* odd 奇数项 even偶数项 数字代表第几个 */
+        /* ul>li:nth-child(2){
+            color:red;
+        } */
+        ul{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <script>
+        var lis=document.getElementsByTagName("li");
+        for(let i=0;i<lis.length;i++){
+            if(i%2==0){
+                lis[i].style.background="red";
+            }
+            else{
+                lis[i].style.background="green";
+            }
+        }
+    </script>
+</body>
+</html>

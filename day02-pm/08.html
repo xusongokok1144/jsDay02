@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/sHover.min.js"></script>
+    <style>
+    .sHover{
+        width: 180px;
+        height: 180px;
+        border: 1ox solid #333;
+    }
+    .sHover_content{
+        background: #333;
+       
+    }
+</style>
+</head>
+<body>
+    <div class="sHover">
+        <img src="image/01.png" alt="">
+        <div class="sHover_content">
+            <p>title</p>
+            <p>content</p>
+        </div>
+    </div>
+    <script>
+        var a = new sHover("sHover","sHover_content")
+        a.set({
+            slideSpeed:1,
+            opcatity:30
+        })
+    </script>
+</body>
+</html>

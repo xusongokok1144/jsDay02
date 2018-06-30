@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="parent">
+        <li>hello world</li>
+    </ul>
+    <button id="btn">btn</button>
+    <script>
+        var btn=document.getElementById("btn");
+        var  parent=document.getElementById("parent");
+        var li =document.getElementsByTagName("li")[0];
+        btn.onclick=function(){
+            parent.removeChild(li);
+        }
+
+    </script>
+</body>
+</html>
